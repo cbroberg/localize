@@ -8,10 +8,8 @@ const Greeter = ({ name, t }) => (
         <h3>{t('num_cars', { smart_count: 0 })}</h3>
         <h3>{t('num_cars', { smart_count: 1 })}</h3>
         <h3>{t('num_cars', { smart_count: 2 })}</h3>
-        <h3>{t("i_like_to_write_in_language", {
-  _: "I like to write in %{language}.",
-  language: "JavaScript"
-})}</h3>
+        <h3>{t('i_like_to_write_in_language', {_: "I like to write in %{language}.", language: "JavaScript"})}</h3>
+        <h3>{t('i_like_to_write_in_language')}</h3>
     </div>
 )
 

@@ -35,5 +35,3 @@ export const translate2 = (BaseComponent) => {
 
     return TranslatedComponent
 }
-
-
