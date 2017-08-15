@@ -1,6 +1,8 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
+// https://github.com/nayaabkhan/react-polyglot
+
 // Higher order component (HOC) decorator for components that need `t`
 export default function translate() {
     return (WrappedComponent) => {
