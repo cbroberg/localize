@@ -1,8 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
-// https://github.com/nayaabkhan/react-polyglot
-
 // Higher order component (HOC) decorator for components that need `t`
 export default function translate() {
     return (WrappedComponent) => {
@@ -20,20 +18,5 @@ export default function translate() {
   }
 }
 
+// Inspiration from https://github.com/nayaabkhan/react-polyglot
 
-export const translate2 = (BaseComponent) => {
-    const TranslatedComponent = (props, context) => (
-        <BaseComponent
-            translate={context.translate}
-            locale={context.locale}
-            {...props}
-        />
-    )
-
-    TranslatedComponent.contextTypes = {
-        translate: PropTypes.func.isRequired,
-        locale: PropTypes.string.isRequired,
-    }
-
-    return TranslatedComponent
-}
