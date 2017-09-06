@@ -6,13 +6,13 @@ import registerServiceWorker from './registerServiceWorker'
 
 const locale = window.locale || 'en'
 const messages = {
-    "hello_name": "Hello, %{name}.",
-    "num_cars": "%{smart_count} car |||| %{smart_count} cars",
-    "login": "",
+	"hello_name": "Hello, %{name}.",
+	"num_cars": "%{smart_count} car |||| %{smart_count} cars",
+	"login": "",
 }
 
 ReactDOM.render(
     <TranslationProvider locale={locale} messages={messages}>
         <App />
     </TranslationProvider>, document.getElementById('root'))
-    registerServiceWorker()
+registerServiceWorker()
