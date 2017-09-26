@@ -1,7 +1,7 @@
 {
   "name": "localize",
   "version": "0.1.0",
-  "private": true,
+  "private": false,
   "dependencies": {
     "node-polyglot": "^2.2.2",
     "polished": "^1.3.0",
